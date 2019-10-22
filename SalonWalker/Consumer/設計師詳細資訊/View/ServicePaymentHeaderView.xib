@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ServicePaymentHeaderView" customModule="SalonWalker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="434" height="87"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="deT-Kx-zpg">
+                    <rect key="frame" x="0.0" y="0.0" width="434" height="87"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="付款方式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRQ-Hb-vyO" customClass="IBInspectableLabel" customModule="SalonWalker" customModuleProvider="target">
+                            <rect key="frame" x="30" y="36.5" width="60" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="chC-Ji-7oC"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.1019607843" green="0.10980392160000001" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="titleLocalizedKey" value="Lang_DD_024"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYe-NM-9OT">
+                            <rect key="frame" x="105" y="15" width="319" height="57"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ftJ-lf-b0d">
+                            <rect key="frame" x="0.0" y="86" width="434" height="1"/>
+                            <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Y5G-Tp-bMW"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="DYe-NM-9OT" firstAttribute="leading" secondItem="jRQ-Hb-vyO" secondAttribute="trailing" constant="15" id="9fH-Wo-2QN"/>
+                        <constraint firstAttribute="trailing" secondItem="ftJ-lf-b0d" secondAttribute="trailing" id="Mfu-eI-UTS"/>
+                        <constraint firstAttribute="bottom" secondItem="DYe-NM-9OT" secondAttribute="bottom" constant="15" id="Or8-9Y-o00"/>
+                        <constraint firstAttribute="bottom" secondItem="ftJ-lf-b0d" secondAttribute="bottom" id="U5l-ul-1NC"/>
+                        <constraint firstItem="jRQ-Hb-vyO" firstAttribute="leading" secondItem="deT-Kx-zpg" secondAttribute="leading" constant="30" id="Vuy-WU-PLJ"/>
+                        <constraint firstItem="DYe-NM-9OT" firstAttribute="top" secondItem="deT-Kx-zpg" secondAttribute="top" constant="15" id="Yav-Sa-gRS"/>
+                        <constraint firstAttribute="trailing" secondItem="DYe-NM-9OT" secondAttribute="trailing" constant="10" id="ZHK-UU-u0o"/>
+                        <constraint firstItem="ftJ-lf-b0d" firstAttribute="leading" secondItem="deT-Kx-zpg" secondAttribute="leading" id="qXs-YW-QxK"/>
+                        <constraint firstItem="jRQ-Hb-vyO" firstAttribute="centerY" secondItem="deT-Kx-zpg" secondAttribute="centerY" multiplier="1.01" id="vje-rx-fSi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="deT-Kx-zpg" secondAttribute="bottom" id="Jih-wM-7X4"/>
+                <constraint firstItem="deT-Kx-zpg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="OSI-UY-aNv"/>
+                <constraint firstItem="deT-Kx-zpg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dkw-Cp-wKJ"/>
+                <constraint firstAttribute="trailing" secondItem="deT-Kx-zpg" secondAttribute="trailing" id="oJG-Ko-D66"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="contentLabel" destination="DYe-NM-9OT" id="TKT-oo-jXW"/>
+            </connections>
+            <point key="canvasLocation" x="-55" y="-74.5"/>
+        </view>
+    </objects>
+</document>

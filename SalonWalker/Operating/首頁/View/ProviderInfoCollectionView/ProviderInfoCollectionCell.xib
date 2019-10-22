@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProviderInfoCollectionCell" id="b6N-jb-kvN" customClass="ProviderInfoCollectionCell" customModule="SalonWalker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="244" height="346"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="244" height="346"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_account_user" translatesAutoresizingMaskIntoConstraints="NO" id="JXI-Wm-h71">
+                        <rect key="frame" x="0.0" y="0.0" width="244" height="244"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="JXI-Wm-h71" secondAttribute="height" multiplier="1:1" id="LFE-iE-ebO"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omN-IC-AbB">
+                        <rect key="frame" x="199" y="0.0" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="NSM-nG-rwY"/>
+                            <constraint firstAttribute="height" constant="45" id="eAs-cG-Yzx"/>
+                        </constraints>
+                        <state key="normal" image="icon_like_normal"/>
+                        <connections>
+                            <action selector="heartButtonHandler:" destination="b6N-jb-kvN" eventType="touchUpInside" id="s9d-vL-7Wq"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PVV-30-xO0">
+                        <rect key="frame" x="0.0" y="244" width="244" height="102"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="魔法部屋.市府店" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKk-Q8-Zbe" customClass="IBInspectableLabel" customModule="SalonWalker" customModuleProvider="target">
+                                <rect key="frame" x="10" y="5" width="89.5" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="h4a-DX-5Nz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="台北市.信義區" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzI-9u-wus">
+                                <rect key="frame" x="10" y="23" width="64.5" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="3U3-mH-xEd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s7a-lM-FzU" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="11" y="82" width="65" height="12"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="QA5-n8-cuk"/>
+                                    <constraint firstAttribute="width" constant="65" id="vdZ-2g-jec"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="updateOnTouch" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="filledImage" value="ic_star_s_12x12"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="ic_star_n_12x12"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(156)" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DI2-Hl-78I">
+                                <rect key="frame" x="81" y="82" width="25.5" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="Wa2-oM-IOu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPY-Yy-VFL">
+                                <rect key="frame" x="10" y="38" width="82.5" height="41"/>
+                                <string key="text">$700時/平日
+$800時/假日</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.1843137255" green="0.062745098040000002" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DI2-Hl-78I" firstAttribute="leading" secondItem="s7a-lM-FzU" secondAttribute="trailing" constant="5" id="1po-AG-Wnc"/>
+                            <constraint firstItem="s7a-lM-FzU" firstAttribute="top" secondItem="lPY-Yy-VFL" secondAttribute="bottom" constant="3" id="327-fs-tR6"/>
+                            <constraint firstItem="yzI-9u-wus" firstAttribute="top" secondItem="uKk-Q8-Zbe" secondAttribute="bottom" constant="3" id="3Yr-V1-fWw"/>
+                            <constraint firstItem="yzI-9u-wus" firstAttribute="leading" secondItem="PVV-30-xO0" secondAttribute="leading" constant="10" id="48H-nv-hav"/>
+                            <constraint firstItem="s7a-lM-FzU" firstAttribute="leading" secondItem="PVV-30-xO0" secondAttribute="leading" constant="11" id="6zF-28-sL5"/>
+                            <constraint firstItem="DI2-Hl-78I" firstAttribute="centerY" secondItem="s7a-lM-FzU" secondAttribute="centerY" id="80C-fs-O5B"/>
+                            <constraint firstAttribute="bottom" secondItem="s7a-lM-FzU" secondAttribute="bottom" constant="8" id="UmZ-Km-qhW"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yzI-9u-wus" secondAttribute="trailing" constant="10" id="ZGz-sw-19j"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="DI2-Hl-78I" secondAttribute="trailing" constant="10" id="b9H-tN-KTD"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uKk-Q8-Zbe" secondAttribute="trailing" constant="10" id="mCg-xK-bsz"/>
+                            <constraint firstItem="uKk-Q8-Zbe" firstAttribute="top" secondItem="PVV-30-xO0" secondAttribute="top" constant="5" id="rBH-eG-UUU"/>
+                            <constraint firstItem="lPY-Yy-VFL" firstAttribute="leading" secondItem="PVV-30-xO0" secondAttribute="leading" constant="10" id="rkl-3S-HGU"/>
+                            <constraint firstItem="uKk-Q8-Zbe" firstAttribute="leading" secondItem="PVV-30-xO0" secondAttribute="leading" constant="10" id="wNw-Jm-OXG"/>
+                            <constraint firstItem="lPY-Yy-VFL" firstAttribute="top" secondItem="yzI-9u-wus" secondAttribute="bottom" constant="3" id="wjk-QJ-j1v"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lPY-Yy-VFL" secondAttribute="trailing" constant="10" id="xho-Rw-D6q"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_account_user" translatesAutoresizingMaskIntoConstraints="NO" id="Wu4-zL-CaG">
+                        <rect key="frame" x="10" y="204" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="fOU-0k-Axd"/>
+                            <constraint firstAttribute="width" constant="30" id="kIn-ai-qpn"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="omN-IC-AbB" secondAttribute="trailing" id="3d4-5T-Quf"/>
+                <constraint firstItem="omN-IC-AbB" firstAttribute="top" secondItem="b6N-jb-kvN" secondAttribute="top" id="E8T-EO-eKd"/>
+                <constraint firstItem="PVV-30-xO0" firstAttribute="leading" secondItem="b6N-jb-kvN" secondAttribute="leading" id="Fp9-XR-Htw"/>
+                <constraint firstItem="PVV-30-xO0" firstAttribute="top" secondItem="JXI-Wm-h71" secondAttribute="bottom" id="GCh-BX-QES"/>
+                <constraint firstItem="JXI-Wm-h71" firstAttribute="top" secondItem="b6N-jb-kvN" secondAttribute="top" id="Igc-5F-fs4"/>
+                <constraint firstItem="omN-IC-AbB" firstAttribute="top" secondItem="b6N-jb-kvN" secondAttribute="top" id="TSZ-Am-zwQ"/>
+                <constraint firstItem="Wu4-zL-CaG" firstAttribute="leading" secondItem="JXI-Wm-h71" secondAttribute="leading" constant="10" id="VDQ-hk-VA1"/>
+                <constraint firstAttribute="trailing" secondItem="omN-IC-AbB" secondAttribute="trailing" id="dPb-3H-515"/>
+                <constraint firstItem="Wu4-zL-CaG" firstAttribute="bottom" secondItem="JXI-Wm-h71" secondAttribute="bottom" constant="-10" id="ecr-gi-cKy"/>
+                <constraint firstItem="JXI-Wm-h71" firstAttribute="leading" secondItem="b6N-jb-kvN" secondAttribute="leading" id="gRY-y2-0Ag"/>
+                <constraint firstAttribute="bottom" secondItem="PVV-30-xO0" secondAttribute="bottom" id="mEF-fD-QHo"/>
+                <constraint firstAttribute="trailing" secondItem="PVV-30-xO0" secondAttribute="trailing" id="mUr-XA-DyB"/>
+                <constraint firstAttribute="trailing" secondItem="JXI-Wm-h71" secondAttribute="trailing" id="yzn-bw-gLW"/>
+            </constraints>
+            <size key="customSize" width="244" height="346"/>
+            <connections>
+                <outlet property="headerImageView" destination="Wu4-zL-CaG" id="tD8-gq-X5j"/>
+                <outlet property="heartButton" destination="omN-IC-AbB" id="XvR-n8-1kN"/>
+                <outlet property="peopleCountLabel" destination="DI2-Hl-78I" id="WOj-x3-JFQ"/>
+                <outlet property="priceLabel" destination="lPY-Yy-VFL" id="5bM-Li-qcY"/>
+                <outlet property="starImage" destination="s7a-lM-FzU" id="k8G-MB-ntM"/>
+                <outlet property="storeAreaLabel" destination="yzI-9u-wus" id="DvO-bY-9aE"/>
+                <outlet property="storeImageView" destination="JXI-Wm-h71" id="C89-gV-i0r"/>
+                <outlet property="storeNameLabel" destination="uKk-Q8-Zbe" id="fHK-02-Jxn"/>
+            </connections>
+            <point key="canvasLocation" x="63" y="97"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_star_n_12x12" width="14" height="14"/>
+        <image name="ic_star_s_12x12" width="14" height="14"/>
+        <image name="icon_like_normal" width="22" height="19"/>
+        <image name="img_account_user" width="60" height="60"/>
+    </resources>
+</document>

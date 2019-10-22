@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ServiceProductAddPhotoCell" rowHeight="70" id="YqY-q1-twT" customClass="ServiceProductAddPhotoCell" customModule="SalonWalker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YqY-q1-twT" id="QkN-Pl-dQO">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HK0-cQ-Vra" customClass="IBInspectableView" customModule="SalonWalker" customModuleProvider="target">
+                        <rect key="frame" x="10" y="10" width="355" height="49.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brn_upload_addmore" translatesAutoresizingMaskIntoConstraints="NO" id="fWn-tg-bbE">
+                                <rect key="frame" x="119.5" y="15" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="5ne-GZ-5Hr"/>
+                                    <constraint firstAttribute="height" constant="20" id="7re-J9-dOI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新增更多" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x90-xq-XV3" customClass="IBInspectableLabel" customModule="SalonWalker" customModuleProvider="target">
+                                <rect key="frame" x="149.5" y="14.5" width="73.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleLocalizedKey" value="Lang_PF_009"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="x90-xq-XV3" firstAttribute="centerX" secondItem="HK0-cQ-Vra" secondAttribute="centerX" multiplier="1.05" id="TfG-Ca-dL8"/>
+                            <constraint firstItem="x90-xq-XV3" firstAttribute="leading" secondItem="fWn-tg-bbE" secondAttribute="trailing" constant="10" id="ggh-pz-eay"/>
+                            <constraint firstItem="x90-xq-XV3" firstAttribute="centerY" secondItem="HK0-cQ-Vra" secondAttribute="centerY" id="zxq-jI-9eq"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.80000000000000004"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HK0-cQ-Vra" firstAttribute="leading" secondItem="QkN-Pl-dQO" secondAttribute="leading" constant="10" id="2gf-eb-zgc"/>
+                    <constraint firstAttribute="trailing" secondItem="HK0-cQ-Vra" secondAttribute="trailing" constant="10" id="OdR-z5-pPc"/>
+                    <constraint firstItem="HK0-cQ-Vra" firstAttribute="top" secondItem="QkN-Pl-dQO" secondAttribute="top" constant="10" id="T6b-vC-ZU8"/>
+                    <constraint firstItem="fWn-tg-bbE" firstAttribute="centerY" secondItem="QkN-Pl-dQO" secondAttribute="centerY" id="nmc-dK-RC0"/>
+                    <constraint firstAttribute="bottom" secondItem="HK0-cQ-Vra" secondAttribute="bottom" constant="10" id="r6u-qE-wbs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="-25.5" y="-26"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="brn_upload_addmore" width="20" height="19"/>
+    </resources>
+</document>

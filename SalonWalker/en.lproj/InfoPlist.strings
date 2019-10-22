@@ -1,0 +1,16 @@
+/* 
+  InfoPlist.strings
+  SalonWalker
+
+  Created by Daniel on 2019/1/21.
+  Copyright © 2019年 skywind. All rights reserved.
+*/
+
+"NSCameraUsageDescription" = "Take photo or video needs to use your camera function, please allow the app to access your camera";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "Your location information will be used to show the distance between you and designers, and the check-in/out function on the day of the service. Please allow the app to access your location information for a better service experience.";
+"NSLocationAlwaysUsageDescription" = "Your location information will be used to show the distance between you and designers, and the check-in/out function on the day of the service. Please allow the app to access your location information for a better service experience.";
+"NSLocationUsageDescription" = "Your location information will be used to show the distance between you and designers, and the check-in/out function on the day of the service. Please allow the app to access your location information for a better service experience.";
+"NSLocationWhenInUseUsageDescription" = "Your location information will be used to show the distance between you and designers, and the check-in/out function on the day of the service. Please allow the app to access your location information for a better service experience.";
+"NSMicrophoneUsageDescription" = "Video needs to use your microphone function, please allow the app to access your microphone";
+"NSPhotoLibraryAddUsageDescription" = "Uploading photos or videos needs to use your album function, please allow the app to access your albums";
+"NSPhotoLibraryUsageDescription" = "Uploading photos or videos needs to use your album function, please allow the app to access your albums";

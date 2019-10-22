@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="38k-aW-dDF" customClass="SignInOutView" customModule="SalonWalker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Egd-kj-ujI">
+                    <rect key="frame" x="50" y="437" width="80" height="80"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="fGY-5W-1fv"/>
+                        <constraint firstAttribute="height" constant="80" id="s8S-37-nH3"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="btn_check_gps"/>
+                    <connections>
+                        <action selector="gpsButtonPress:" destination="38k-aW-dDF" eventType="touchUpInside" id="y4T-ua-XIk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6N-Do-h7W">
+                    <rect key="frame" x="140" y="547" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="NHC-NZ-Hu7"/>
+                        <constraint firstAttribute="width" constant="40" id="eQk-KB-ZgI"/>
+                    </constraints>
+                    <state key="normal" image="btn_check_close"/>
+                    <connections>
+                        <action selector="cancelButtonPress:" destination="38k-aW-dDF" eventType="touchUpInside" id="0rm-FZ-bOt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMj-Of-HZF">
+                    <rect key="frame" x="190" y="437" width="80" height="80"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="2YU-9X-sZZ"/>
+                        <constraint firstAttribute="width" constant="80" id="JXX-Ok-UDx"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="btn_check_qrcode"/>
+                    <connections>
+                        <action selector="qrcodeButtonPress:" destination="38k-aW-dDF" eventType="touchUpInside" id="bFf-Jh-o7O"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="掃髮廊QRcode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ruS-VC-3r5" customClass="IBInspectableLabel" customModule="SalonWalker" customModuleProvider="target">
+                    <rect key="frame" x="183" y="418" width="94.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="titleLocalizedKey" value="Lang_SD_002"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPS定位" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABh-QI-V2J" customClass="IBInspectableLabel" customModule="SalonWalker" customModuleProvider="target">
+                    <rect key="frame" x="61.5" y="418" width="57" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="titleLocalizedKey" value="Lang_SD_001"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="x6N-Do-h7W" firstAttribute="centerX" secondItem="38k-aW-dDF" secondAttribute="centerX" id="AOO-PL-aFZ"/>
+                <constraint firstItem="x6N-Do-h7W" firstAttribute="top" secondItem="Egd-kj-ujI" secondAttribute="bottom" constant="30" id="Gek-gH-kG1"/>
+                <constraint firstItem="x6N-Do-h7W" firstAttribute="top" secondItem="QMj-Of-HZF" secondAttribute="bottom" constant="30" id="SkS-wV-dGA"/>
+                <constraint firstItem="x6N-Do-h7W" firstAttribute="centerY" secondItem="38k-aW-dDF" secondAttribute="centerY" multiplier="1.7" id="XHk-jq-L5g"/>
+                <constraint firstItem="Egd-kj-ujI" firstAttribute="top" secondItem="ABh-QI-V2J" secondAttribute="bottom" constant="2" id="cjo-eg-Daa"/>
+                <constraint firstItem="ruS-VC-3r5" firstAttribute="centerX" secondItem="QMj-Of-HZF" secondAttribute="centerX" id="esd-72-8VS"/>
+                <constraint firstItem="ABh-QI-V2J" firstAttribute="centerX" secondItem="Egd-kj-ujI" secondAttribute="centerX" id="g04-Yc-M7n"/>
+                <constraint firstItem="QMj-Of-HZF" firstAttribute="leading" secondItem="x6N-Do-h7W" secondAttribute="trailing" constant="10" id="hNL-pI-9yj"/>
+                <constraint firstItem="x6N-Do-h7W" firstAttribute="leading" secondItem="Egd-kj-ujI" secondAttribute="trailing" constant="10" id="qTe-Y3-GL4"/>
+                <constraint firstItem="QMj-Of-HZF" firstAttribute="top" secondItem="ruS-VC-3r5" secondAttribute="bottom" constant="2" id="ums-Ft-f5Y"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-12" y="104"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_check_close" width="40" height="40"/>
+        <image name="btn_check_gps" width="82" height="82"/>
+        <image name="btn_check_qrcode" width="82" height="82"/>
+    </resources>
+</document>

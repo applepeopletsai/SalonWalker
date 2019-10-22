@@ -1,0 +1,6 @@
+framework module Pods_SalonWalker_AppStore {
+  umbrella header "Pods-SalonWalker_AppStore-umbrella.h"
+
+  export *
+  module * { export * }
+}

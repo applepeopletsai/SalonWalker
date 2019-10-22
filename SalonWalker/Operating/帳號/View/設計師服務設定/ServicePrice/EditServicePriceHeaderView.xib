@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EditServicePriceHeaderView" customModule="SalonWalker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="662" height="124"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5gP-8M-5OI">
+                    <rect key="frame" x="0.0" y="0.0" width="662" height="124"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nNi-o9-1Oi">
+                            <rect key="frame" x="65" y="49.5" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="HHx-xz-Itg"/>
+                                <constraint firstAttribute="width" constant="25" id="YAz-wX-DvG"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbE-DC-o36">
+                            <rect key="frame" x="60" y="44.5" width="35" height="35"/>
+                            <connections>
+                                <action selector="tickButtonPress:" destination="iN0-l3-epB" eventType="touchUpInside" id="YBC-6H-bK3"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqv-31-210">
+                            <rect key="frame" x="100" y="53.5" width="35.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.1019607843" green="0.10980392160000001" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="lpK-ux-M1k" customClass="IBInspectableView" customModule="SalonWalker" customModuleProvider="target">
+                            <rect key="frame" x="610" y="45" width="34" height="34"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                    <size key="value" width="0.0" height="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                    <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CWp-vX-Olh">
+                            <rect key="frame" x="612" y="47" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="HQT-uc-roA"/>
+                                <constraint firstAttribute="width" constant="30" id="Vd1-Eg-OLI"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qgc-wY-3s2">
+                            <rect key="frame" x="610" y="45" width="34" height="34"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="photoButtonPress:" destination="iN0-l3-epB" eventType="touchUpInside" id="SSM-yE-s4g"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="lbE-DC-o36" firstAttribute="top" secondItem="nNi-o9-1Oi" secondAttribute="top" constant="-5" id="5aT-l8-Nef"/>
+                        <constraint firstItem="Qgc-wY-3s2" firstAttribute="trailing" secondItem="lpK-ux-M1k" secondAttribute="trailing" id="9WD-AE-FlD"/>
+                        <constraint firstItem="Qgc-wY-3s2" firstAttribute="leading" secondItem="lpK-ux-M1k" secondAttribute="leading" id="FZv-8I-oz4"/>
+                        <constraint firstItem="lbE-DC-o36" firstAttribute="trailing" secondItem="nNi-o9-1Oi" secondAttribute="trailing" constant="5" id="NEa-Sn-XJl"/>
+                        <constraint firstItem="lbE-DC-o36" firstAttribute="bottom" secondItem="nNi-o9-1Oi" secondAttribute="bottom" constant="5" id="NPb-YG-OuC"/>
+                        <constraint firstItem="lpK-ux-M1k" firstAttribute="bottom" secondItem="CWp-vX-Olh" secondAttribute="bottom" constant="2" id="VTK-XR-ZUh"/>
+                        <constraint firstItem="nNi-o9-1Oi" firstAttribute="centerY" secondItem="5gP-8M-5OI" secondAttribute="centerY" id="WNR-sW-ZK8"/>
+                        <constraint firstItem="Qgc-wY-3s2" firstAttribute="top" secondItem="lpK-ux-M1k" secondAttribute="top" id="Yaj-NA-jVT"/>
+                        <constraint firstItem="lbE-DC-o36" firstAttribute="leading" secondItem="nNi-o9-1Oi" secondAttribute="leading" constant="-5" id="fv5-by-dfV"/>
+                        <constraint firstItem="lpK-ux-M1k" firstAttribute="top" secondItem="CWp-vX-Olh" secondAttribute="top" constant="-2" id="gJ4-66-iBJ"/>
+                        <constraint firstItem="zqv-31-210" firstAttribute="leading" secondItem="nNi-o9-1Oi" secondAttribute="trailing" constant="10" id="hMl-Br-x5N"/>
+                        <constraint firstItem="lpK-ux-M1k" firstAttribute="leading" secondItem="CWp-vX-Olh" secondAttribute="leading" constant="-2" id="osc-Oe-boj"/>
+                        <constraint firstItem="CWp-vX-Olh" firstAttribute="centerY" secondItem="5gP-8M-5OI" secondAttribute="centerY" id="oul-Xz-yuy"/>
+                        <constraint firstItem="nNi-o9-1Oi" firstAttribute="leading" secondItem="5gP-8M-5OI" secondAttribute="leading" constant="65" id="pbs-FR-q5x"/>
+                        <constraint firstItem="Qgc-wY-3s2" firstAttribute="bottom" secondItem="lpK-ux-M1k" secondAttribute="bottom" id="u2e-8G-Jah"/>
+                        <constraint firstItem="lpK-ux-M1k" firstAttribute="trailing" secondItem="CWp-vX-Olh" secondAttribute="trailing" constant="2" id="v46-a9-Gqb"/>
+                        <constraint firstAttribute="trailing" secondItem="CWp-vX-Olh" secondAttribute="trailing" constant="20" id="xDI-WW-zWX"/>
+                        <constraint firstItem="zqv-31-210" firstAttribute="centerY" secondItem="nNi-o9-1Oi" secondAttribute="centerY" id="zbK-Jh-Gzz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="5gP-8M-5OI" secondAttribute="trailing" id="A3d-Qo-0r4"/>
+                <constraint firstAttribute="bottom" secondItem="5gP-8M-5OI" secondAttribute="bottom" id="JNj-Rr-9ib"/>
+                <constraint firstItem="5gP-8M-5OI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oVl-tp-mhf"/>
+                <constraint firstItem="5gP-8M-5OI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vfF-zp-lzA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="photoImageView" destination="CWp-vX-Olh" id="gF7-ML-4Kv"/>
+                <outlet property="tickImageView" destination="nNi-o9-1Oi" id="nEk-bZ-d1N"/>
+                <outlet property="titleLabel" destination="zqv-31-210" id="Tpb-Px-pCr"/>
+            </connections>
+            <point key="canvasLocation" x="-95" y="-220"/>
+        </view>
+    </objects>
+</document>

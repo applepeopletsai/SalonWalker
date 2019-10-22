@@ -1,0 +1,254 @@
+PODS:
+  - Alamofire (4.7.3)
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - Branch (0.25.11):
+    - Branch/Core (= 0.25.11)
+  - Branch/Core (0.25.11)
+  - Cosmos (17.0.0)
+  - Crashlytics (3.12.0):
+    - Fabric (~> 1.9.0)
+  - DKCamera (1.6.2)
+  - DKImagePickerController/Camera (4.0.3):
+    - DKCamera
+    - DKImagePickerController/Core
+  - DKImagePickerController/Core (4.0.3):
+    - DKImagePickerController/ImageDataManager
+    - DKImagePickerController/Resource
+  - DKImagePickerController/ImageDataManager (4.0.3)
+  - DKImagePickerController/InlineCamera (4.0.3):
+    - DKCamera
+    - DKImagePickerController/Core
+  - DKImagePickerController/PhotoGallery (4.0.3):
+    - DKImagePickerController/Core
+    - DKPhotoGallery
+  - DKImagePickerController/Resource (4.0.3)
+  - DKPhotoGallery (0.0.10):
+    - DKPhotoGallery/Core (= 0.0.10)
+    - DKPhotoGallery/Model (= 0.0.10)
+    - DKPhotoGallery/Preview (= 0.0.10)
+    - DKPhotoGallery/Resource (= 0.0.10)
+    - SDWebImage/GIF
+  - DKPhotoGallery/Core (0.0.10):
+    - DKPhotoGallery/Model
+    - DKPhotoGallery/Preview
+    - SDWebImage/GIF
+  - DKPhotoGallery/Model (0.0.10):
+    - SDWebImage/GIF
+  - DKPhotoGallery/Preview (0.0.10):
+    - DKPhotoGallery/Model
+    - DKPhotoGallery/Resource
+    - SDWebImage/GIF
+  - DKPhotoGallery/Resource (0.0.10):
+    - SDWebImage/GIF
+  - Fabric (1.9.0)
+  - FBSDKCoreKit (4.37.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.37.0):
+    - FBSDKCoreKit
+  - Firebase/Core (5.16.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 5.5.0)
+  - Firebase/CoreOnly (5.16.0):
+    - FirebaseCore (= 5.2.0)
+  - FirebaseAnalytics (5.5.0):
+    - FirebaseCore (~> 5.2)
+    - FirebaseInstanceID (~> 3.4)
+    - GoogleAppMeasurement (= 5.5.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
+    - GoogleUtilities/MethodSwizzler (~> 5.2)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - FirebaseCore (5.2.0):
+    - GoogleUtilities/Logger (~> 5.2)
+  - FirebaseInstanceID (3.4.0):
+    - FirebaseCore (~> 5.2)
+    - GoogleUtilities/Environment (~> 5.3)
+    - GoogleUtilities/UserDefaults (~> 5.3)
+  - FLAnimatedImage (1.0.12)
+  - FlexiblePageControl (1.0.7)
+  - GoogleAppMeasurement (5.5.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
+    - GoogleUtilities/MethodSwizzler (~> 5.2)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - GoogleMaps (2.7.0):
+    - GoogleMaps/Maps (= 2.7.0)
+  - GoogleMaps/Base (2.7.0)
+  - GoogleMaps/Maps (2.7.0):
+    - GoogleMaps/Base
+  - GoogleSignIn (4.3.0):
+    - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
+    - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
+    - GTMOAuth2 (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleToolboxForMac/DebugUtils (2.1.4):
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - GoogleToolboxForMac/Defines (2.1.4)
+  - "GoogleToolboxForMac/NSDictionary+URLArguments (2.1.4)":
+    - GoogleToolboxForMac/DebugUtils (= 2.1.4)
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+    - "GoogleToolboxForMac/NSString+URLArguments (= 2.1.4)"
+  - "GoogleToolboxForMac/NSString+URLArguments (2.1.4)"
+  - GoogleUtilities/AppDelegateSwizzler (5.3.7):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (5.3.7)
+  - GoogleUtilities/Logger (5.3.7):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (5.3.7):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (5.3.7):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (5.3.7)"
+  - GoogleUtilities/Reachability (5.3.7):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (5.3.7):
+    - GoogleUtilities/Logger
+  - GTMOAuth2 (1.1.6):
+    - GTMSessionFetcher (~> 1.1)
+  - GTMSessionFetcher (1.2.0):
+    - GTMSessionFetcher/Full (= 1.2.0)
+  - GTMSessionFetcher/Core (1.2.0)
+  - GTMSessionFetcher/Full (1.2.0):
+    - GTMSessionFetcher/Core (= 1.2.0)
+  - IQKeyboardManagerSwift (6.2.0)
+  - JTAppleCalendar (7.1.6)
+  - Kingfisher (4.10.0)
+  - LLCycleScrollView (1.5.1):
+    - Kingfisher
+  - nanopb (0.3.901):
+    - nanopb/decode (= 0.3.901)
+    - nanopb/encode (= 0.3.901)
+  - nanopb/decode (0.3.901)
+  - nanopb/encode (0.3.901)
+  - SDWebImage/Core (4.4.2)
+  - SDWebImage/GIF (4.4.2):
+    - FLAnimatedImage (~> 1.0)
+    - SDWebImage/Core
+  - SQLite.swift (0.11.5):
+    - SQLite.swift/standard (= 0.11.5)
+  - SQLite.swift/standard (0.11.5)
+  - SwiftMessages (4.1.4):
+    - SwiftMessages/App (= 4.1.4)
+  - SwiftMessages/App (4.1.4)
+  - SwiftSVG (2.1.5)
+
+DEPENDENCIES:
+  - Alamofire
+  - Branch
+  - Cosmos
+  - Crashlytics
+  - DKImagePickerController/Camera (from `https://github.com/zhangao0086/DKImagePickerController.git`, branch `develop`)
+  - DKImagePickerController/InlineCamera (from `https://github.com/zhangao0086/DKImagePickerController.git`, branch `develop`)
+  - DKImagePickerController/PhotoGallery (from `https://github.com/zhangao0086/DKImagePickerController.git`, branch `develop`)
+  - Fabric
+  - FBSDKLoginKit
+  - Firebase/Core
+  - FlexiblePageControl (from `https://github.com/shima11/FlexiblePageControl.git`)
+  - GoogleMaps
+  - GoogleSignIn
+  - IQKeyboardManagerSwift
+  - JTAppleCalendar
+  - Kingfisher
+  - LLCycleScrollView
+  - SQLite.swift
+  - SwiftMessages
+  - SwiftSVG
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Bolts
+    - Branch
+    - Cosmos
+    - Crashlytics
+    - DKCamera
+    - DKPhotoGallery
+    - Fabric
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseInstanceID
+    - FLAnimatedImage
+    - GoogleAppMeasurement
+    - GoogleMaps
+    - GoogleSignIn
+    - GoogleToolboxForMac
+    - GoogleUtilities
+    - GTMOAuth2
+    - GTMSessionFetcher
+    - IQKeyboardManagerSwift
+    - JTAppleCalendar
+    - Kingfisher
+    - LLCycleScrollView
+    - nanopb
+    - SDWebImage
+    - SQLite.swift
+    - SwiftMessages
+    - SwiftSVG
+
+EXTERNAL SOURCES:
+  DKImagePickerController:
+    :branch: develop
+    :git: https://github.com/zhangao0086/DKImagePickerController.git
+  FlexiblePageControl:
+    :git: https://github.com/shima11/FlexiblePageControl.git
+
+CHECKOUT OPTIONS:
+  DKImagePickerController:
+    :commit: b1e0cb5ab6dcc356997be4f7801ef9ccbded34af
+    :git: https://github.com/zhangao0086/DKImagePickerController.git
+  FlexiblePageControl:
+    :commit: 7965a0a204400069055c92cbf5b99aed76a11daa
+    :git: https://github.com/shima11/FlexiblePageControl.git
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  Branch: 3cc6dcfd726db42ced22c418c0fb09aa5e90a847
+  Cosmos: 309e489f21ffc91a1eeecfebef7f817cd2fcfba6
+  Crashlytics: 07fb167b1694128c1c9a5a5cc319b0e9c3ca0933
+  DKCamera: c25552afb4bc3ef4c7966b16a44352d36475fe5d
+  DKImagePickerController: a39a124e2f27cabc29e37c845db85042e2143ac4
+  DKPhotoGallery: d2ee578ee1ae92f3350de9ebc5e2fb5762a76626
+  Fabric: f988e33c97f08930a413e08123064d2e5f68d655
+  FBSDKCoreKit: fe5f3474499a81963e11e3f3a5c753d0a95ca2b4
+  FBSDKLoginKit: 2f7249686d1e30ce8a5ef5400eedf50b3e3df332
+  Firebase: 749a8ff4962f9d8c79dda1966de20f6f77583d67
+  FirebaseAnalytics: d35d47c03c50c73c14a7fd31463c5775843e78a9
+  FirebaseCore: ea2d1816723ef21492b8e9113303e1350db5e08c
+  FirebaseInstanceID: 97ea7a5dca9afd72c79bfcdddb7a44aa1cbb42a1
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  FlexiblePageControl: 2ce8446da3d75df6432dbad7b9e19151629dae62
+  GoogleAppMeasurement: 621f3bc6211d5ba548debe01fafad30cf5ab6859
+  GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
+  GoogleSignIn: 11183592dc63e105475c7305a325045ff95e02b7
+  GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
+  GoogleUtilities: 111a012f4c3a29c9e7c954c082fafd6ee3c999c0
+  GTMOAuth2: e8b6512c896235149df975c41d9a36c868ab7fba
+  GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
+  IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
+  JTAppleCalendar: abb30678f42a4ef8a340a932b1dcb8c85a33dac2
+  Kingfisher: 43c4b802d8b5256cf1f4379e9cd10b329be6d3e2
+  LLCycleScrollView: 52c2e96a92b6d16d8e0fe46b6aedb8a320bc846b
+  nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  SQLite.swift: 6e5356850bb1791459f8c16d6ee9195b28714a2e
+  SwiftMessages: 2c33fdee8b8f38dfc7e1036684456b505891da8c
+  SwiftSVG: 9d78f41396a921c210ce9898ada05c85d412acb8
+
+PODFILE CHECKSUM: fdff77ad0573f59ab8a79c04fad5a95bfc1a1651
+
+COCOAPODS: 1.6.0.beta.1

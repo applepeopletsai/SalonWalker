@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>136845154011-od71o39a235to74ps3gtelh5ap5anme2.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.136845154011-od71o39a235to74ps3gtelh5ap5anme2</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC3mi3n2wWomZIFbOxdpbBWdaO82gRhSqk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>136845154011</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.salonwalker.user</string>
+	<key>PROJECT_ID</key>
+	<string>salonwalker-9766c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>salonwalker-9766c.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:136845154011:ios:c5b1fb0d4f59345a</string>
+	<key>DATABASE_URL</key>
+	<string>https://salonwalker-9766c.firebaseio.com</string>
+</dict>
+</plist>

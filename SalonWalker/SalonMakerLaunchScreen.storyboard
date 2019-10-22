@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7Mc-VN-8Wt">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="8fU-Rn-idT">
+            <objects>
+                <viewController id="7Mc-VN-8Wt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SXM-4B-4qG"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Oq-a9-Coh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ffC-2V-hBa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="B_000" translatesAutoresizingMaskIntoConstraints="NO" id="XRS-5J-a5N">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="XRS-5J-a5N" secondAttribute="trailing" id="GQk-WG-Gqd"/>
+                            <constraint firstAttribute="bottom" secondItem="XRS-5J-a5N" secondAttribute="bottom" id="Hq8-jV-r5A"/>
+                            <constraint firstItem="XRS-5J-a5N" firstAttribute="top" secondItem="ffC-2V-hBa" secondAttribute="top" id="NDn-Ln-u82"/>
+                            <constraint firstItem="XRS-5J-a5N" firstAttribute="leading" secondItem="ffC-2V-hBa" secondAttribute="leading" id="agd-kl-2lX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GhK-0M-bts" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7" y="59"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="B_000" width="375" height="667"/>
+    </resources>
+</document>

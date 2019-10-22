@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="gSS-3K-ymH" customClass="ServiceItemsTitleHeaderView" customModule="SalonWalker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="549" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mxC-dm-mav">
+                    <rect key="frame" x="0.0" y="0.0" width="549" height="70"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oMT-Je-hBq">
+                            <rect key="frame" x="20" y="20" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="CiJ-1g-gTw"/>
+                                <constraint firstAttribute="width" constant="30" id="MaZ-Xd-cbq"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xJ-D2-hLE">
+                            <rect key="frame" x="65" y="23.5" width="48" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ys9-a5-22G">
+                            <rect key="frame" x="479" y="0.0" width="70" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="MJh-Lg-htf"/>
+                            </constraints>
+                            <state key="normal" image="checkbox_normal"/>
+                            <state key="selected" image="checkbox_checked"/>
+                            <connections>
+                                <action selector="checkBoxButtonPress:" destination="gSS-3K-ymH" eventType="touchUpInside" id="yfs-xy-1mo"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOf-zi-0cP">
+                            <rect key="frame" x="0.0" y="0.0" width="479" height="70"/>
+                            <connections>
+                                <action selector="viewButtonPress:" destination="gSS-3K-ymH" eventType="touchUpInside" id="glA-ne-TLc"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ys9-a5-22G" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0xJ-D2-hLE" secondAttribute="trailing" id="1nC-Ux-DwK"/>
+                        <constraint firstItem="0xJ-D2-hLE" firstAttribute="centerY" secondItem="mxC-dm-mav" secondAttribute="centerY" id="5mU-bk-dfu"/>
+                        <constraint firstItem="oMT-Je-hBq" firstAttribute="centerY" secondItem="mxC-dm-mav" secondAttribute="centerY" id="94g-Vr-R4r"/>
+                        <constraint firstItem="oMT-Je-hBq" firstAttribute="leading" secondItem="mxC-dm-mav" secondAttribute="leading" constant="20" id="Bmx-BA-Wk4"/>
+                        <constraint firstItem="ys9-a5-22G" firstAttribute="leading" secondItem="gOf-zi-0cP" secondAttribute="trailing" id="NaN-dp-lmq"/>
+                        <constraint firstItem="gOf-zi-0cP" firstAttribute="leading" secondItem="mxC-dm-mav" secondAttribute="leading" id="Vhk-yg-xzK"/>
+                        <constraint firstItem="0xJ-D2-hLE" firstAttribute="leading" secondItem="oMT-Je-hBq" secondAttribute="trailing" constant="15" id="Xxk-kr-E3I"/>
+                        <constraint firstAttribute="bottom" secondItem="gOf-zi-0cP" secondAttribute="bottom" id="bnP-eE-jN4"/>
+                        <constraint firstItem="ys9-a5-22G" firstAttribute="top" secondItem="mxC-dm-mav" secondAttribute="top" id="ovR-Rj-ioG"/>
+                        <constraint firstAttribute="bottom" secondItem="ys9-a5-22G" secondAttribute="bottom" id="tSh-Wu-6z4"/>
+                        <constraint firstItem="gOf-zi-0cP" firstAttribute="top" secondItem="mxC-dm-mav" secondAttribute="top" id="tqs-yE-pei"/>
+                        <constraint firstAttribute="trailing" secondItem="ys9-a5-22G" secondAttribute="trailing" id="xwa-MI-uGm"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="mxC-dm-mav" firstAttribute="top" secondItem="gSS-3K-ymH" secondAttribute="top" id="4z2-zR-HVq"/>
+                <constraint firstAttribute="bottom" secondItem="mxC-dm-mav" secondAttribute="bottom" id="bwo-Qt-XDp"/>
+                <constraint firstAttribute="trailing" secondItem="mxC-dm-mav" secondAttribute="trailing" id="nhw-hi-wh7"/>
+                <constraint firstItem="mxC-dm-mav" firstAttribute="leading" secondItem="gSS-3K-ymH" secondAttribute="leading" id="ycV-Nj-f6I"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="checkBoxButton" destination="ys9-a5-22G" id="nBW-64-4HF"/>
+                <outlet property="iconImageView" destination="oMT-Je-hBq" id="0n3-Rz-QE7"/>
+                <outlet property="serviceNameLabel" destination="0xJ-D2-hLE" id="jOv-lN-Nzb"/>
+            </connections>
+            <point key="canvasLocation" x="-41.5" y="-398"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkbox_checked" width="26" height="26"/>
+        <image name="checkbox_normal" width="26" height="26"/>
+    </resources>
+</document>

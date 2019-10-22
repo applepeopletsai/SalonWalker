@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="IntroductionView" customModule="SalonWalker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_welcome03" translatesAutoresizingMaskIntoConstraints="NO" id="0IM-IE-DM2">
+                    <rect key="frame" x="56.5" y="102" width="262.5" height="262.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="0IM-IE-DM2" secondAttribute="height" multiplier="1:1" id="RWT-b1-CIU"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="場地回應" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqF-mx-7qh">
+                    <rect key="frame" x="56" y="396.5" width="263" height="29"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <color key="textColor" red="0.1019607843" green="0.10980392160000001" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sa1-Nm-1SM">
+                    <rect key="frame" x="48" y="441.5" width="279" height="2"/>
+                    <color key="backgroundColor" red="0.10196078431372549" green="0.10980392156862745" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="8WV-2q-Hlq"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6h-TI-tTC">
+                    <rect key="frame" x="56" y="459.5" width="263" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.1019607843" green="0.10980392160000001" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NdY-77-8OY" customClass="IBInspectableButton" customModule="SalonWalker" customModuleProvider="target">
+                    <rect key="frame" x="88" y="329.5" width="199" height="45"/>
+                    <color key="backgroundColor" red="0.10196078431372549" green="0.10980392156862745" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="KrK-vB-F2s"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="立即體驗">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="23"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.0" green="0.0" blue="0.60784313725490191" alpha="0.22" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="0.0" height="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="titleLocalizedKey" value="Lang_WE_018"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="actionButtonOnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="jnz-gc-npS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.91922917282521599" green="0.90956882601240907" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qqF-mx-7qh" firstAttribute="top" secondItem="0IM-IE-DM2" secondAttribute="bottom" constant="32" id="4PL-6A-RXQ"/>
+                <constraint firstItem="0IM-IE-DM2" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.7" id="5R2-dv-AHC"/>
+                <constraint firstItem="NdY-77-8OY" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PDA-Sb-aJc"/>
+                <constraint firstItem="y6h-TI-tTC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Pug-fC-yYz"/>
+                <constraint firstItem="NdY-77-8OY" firstAttribute="bottom" secondItem="0IM-IE-DM2" secondAttribute="bottom" constant="10" id="RYR-Yd-gxH"/>
+                <constraint firstItem="sa1-Nm-1SM" firstAttribute="top" secondItem="qqF-mx-7qh" secondAttribute="bottom" constant="16" id="Tfw-tm-WNg"/>
+                <constraint firstAttribute="trailing" secondItem="sa1-Nm-1SM" secondAttribute="trailing" constant="48" id="TuM-xl-9W1"/>
+                <constraint firstItem="sa1-Nm-1SM" firstAttribute="trailing" secondItem="qqF-mx-7qh" secondAttribute="trailing" constant="8" id="XgO-1a-K2u"/>
+                <constraint firstItem="sa1-Nm-1SM" firstAttribute="leading" secondItem="qqF-mx-7qh" secondAttribute="leading" constant="-8" id="ZtC-63-4af"/>
+                <constraint firstItem="y6h-TI-tTC" firstAttribute="leading" secondItem="sa1-Nm-1SM" secondAttribute="leading" constant="8" id="j48-uv-aLQ"/>
+                <constraint firstItem="0IM-IE-DM2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="kCT-pY-FsH"/>
+                <constraint firstItem="sa1-Nm-1SM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="48" id="mAb-rU-aQW"/>
+                <constraint firstItem="0IM-IE-DM2" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.7" id="mtZ-4L-0aU"/>
+                <constraint firstItem="y6h-TI-tTC" firstAttribute="trailing" secondItem="sa1-Nm-1SM" secondAttribute="trailing" constant="-8" id="t7s-of-jzL"/>
+                <constraint firstItem="y6h-TI-tTC" firstAttribute="top" secondItem="sa1-Nm-1SM" secondAttribute="bottom" constant="16" id="uO7-Rc-jfL"/>
+                <constraint firstItem="NdY-77-8OY" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.53" id="upE-pb-sTO"/>
+            </constraints>
+            <connections>
+                <outlet property="actionButton" destination="NdY-77-8OY" id="Z9e-c0-agf"/>
+                <outlet property="imageView" destination="0IM-IE-DM2" id="8TB-aR-d4A"/>
+                <outlet property="subtitleLabel" destination="y6h-TI-tTC" id="T83-Wv-VwJ"/>
+                <outlet property="titleLabel" destination="qqF-mx-7qh" id="Xca-JG-ETh"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img_welcome03" width="311" height="324"/>
+    </resources>
+</document>

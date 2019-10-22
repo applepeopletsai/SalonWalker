@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FilterView" customModule="SalonWalker" customModuleProvider="target">
+            <connections>
+                <outlet property="filterButton" destination="BZn-2j-vL8" id="67T-xh-RUW"/>
+                <outlet property="filterImageView" destination="vaQ-am-WCt" id="TMp-D0-F4H"/>
+                <outlet property="filterLabel" destination="K5d-Y4-O9Y" id="laj-U5-wzz"/>
+                <outlet property="searchTextField" destination="iF5-et-WjS" id="z26-Nz-Vda"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="W20-jy-v9l">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="篩選" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5d-Y4-O9Y" customClass="IBInspectableLabel" customModule="SalonWalker" customModuleProvider="target">
+                    <rect key="frame" x="335" y="15.5" width="25" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="titleLocalizedKey" value="Lang_HM_002"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_landmark_b" translatesAutoresizingMaskIntoConstraints="NO" id="vaQ-am-WCt">
+                    <rect key="frame" x="316" y="13" width="14" height="19"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZn-2j-vL8">
+                    <rect key="frame" x="316" y="0.0" width="59" height="45"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="filterButtonPress:" destination="-1" eventType="touchUpInside" id="XGI-ir-56p"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iF5-et-WjS" customClass="IBInspectableTextField" customModule="SalonWalker" customModuleProvider="target">
+                    <rect key="frame" x="15" y="10" width="286" height="28"/>
+                    <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="leftImageName" value="ic_search"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="leftImagePadding">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="textPadding">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolderLocolizedKey" value="Lang_HM_027"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="EJ4-0f-HS5"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="BZn-2j-vL8" firstAttribute="leading" secondItem="vaQ-am-WCt" secondAttribute="leading" id="074-5O-Ohb"/>
+                <constraint firstItem="vaQ-am-WCt" firstAttribute="leading" secondItem="iF5-et-WjS" secondAttribute="trailing" constant="15" id="0DR-3U-v0W"/>
+                <constraint firstItem="vaQ-am-WCt" firstAttribute="centerY" secondItem="W20-jy-v9l" secondAttribute="centerY" id="8JP-L6-Dmj"/>
+                <constraint firstAttribute="trailing" secondItem="BZn-2j-vL8" secondAttribute="trailing" id="FDx-y8-BhV"/>
+                <constraint firstItem="BZn-2j-vL8" firstAttribute="top" secondItem="W20-jy-v9l" secondAttribute="top" id="RHj-q9-Wcn"/>
+                <constraint firstItem="iF5-et-WjS" firstAttribute="top" secondItem="W20-jy-v9l" secondAttribute="top" constant="10" id="bLD-WV-Ea9"/>
+                <constraint firstItem="K5d-Y4-O9Y" firstAttribute="leading" secondItem="vaQ-am-WCt" secondAttribute="trailing" constant="5" id="eQY-zF-PeT"/>
+                <constraint firstItem="K5d-Y4-O9Y" firstAttribute="centerY" secondItem="W20-jy-v9l" secondAttribute="centerY" id="fBQ-qH-vbS"/>
+                <constraint firstAttribute="bottom" secondItem="BZn-2j-vL8" secondAttribute="bottom" id="gcO-ls-slV"/>
+                <constraint firstAttribute="bottom" secondItem="iF5-et-WjS" secondAttribute="bottom" constant="7" id="jSu-Se-3Yc"/>
+                <constraint firstItem="iF5-et-WjS" firstAttribute="leading" secondItem="W20-jy-v9l" secondAttribute="leading" constant="15" id="v36-1a-DqJ"/>
+                <constraint firstAttribute="trailing" secondItem="K5d-Y4-O9Y" secondAttribute="trailing" constant="15" id="vld-Gw-Wlp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="199.5" y="-104.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_landmark_b" width="14" height="19"/>
+    </resources>
+</document>

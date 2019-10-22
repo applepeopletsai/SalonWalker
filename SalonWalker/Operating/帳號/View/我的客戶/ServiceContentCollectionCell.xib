@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ServiceContentCollectionCell" id="gTV-IL-0wX" customClass="ServiceContentCollectionCell" customModule="SalonWalker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="85"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="85"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v7T-K8-z4f">
+                        <rect key="frame" x="0.0" y="0.0" width="77" height="85"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn_hair_cut" translatesAutoresizingMaskIntoConstraints="NO" id="bly-TD-YUI">
+                                <rect key="frame" x="20" y="0.0" width="38" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="Dfm-v8-Bp1"/>
+                                    <constraint firstAttribute="width" constant="38" id="heY-hB-RJS"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="頭皮舒壓" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYF-pF-D6Q">
+                                <rect key="frame" x="10" y="41" width="57.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.1019607843" green="0.10980392160000001" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1500" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMU-2b-qxh">
+                                <rect key="frame" x="17" y="63" width="44" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wYF-pF-D6Q" secondAttribute="trailing" constant="5" id="J3h-yF-Kig"/>
+                            <constraint firstItem="bly-TD-YUI" firstAttribute="top" secondItem="v7T-K8-z4f" secondAttribute="top" id="NX9-5S-GYQ"/>
+                            <constraint firstItem="wYF-pF-D6Q" firstAttribute="centerX" secondItem="bly-TD-YUI" secondAttribute="centerX" id="W3i-c3-I6T"/>
+                            <constraint firstItem="wYF-pF-D6Q" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="v7T-K8-z4f" secondAttribute="leading" constant="5" id="b66-c0-W8B"/>
+                            <constraint firstItem="bly-TD-YUI" firstAttribute="centerX" secondItem="v7T-K8-z4f" secondAttribute="centerX" id="egG-gt-d7T"/>
+                            <constraint firstItem="wYF-pF-D6Q" firstAttribute="top" secondItem="bly-TD-YUI" secondAttribute="bottom" constant="3" id="m5v-oM-YDS"/>
+                            <constraint firstItem="TMU-2b-qxh" firstAttribute="top" secondItem="wYF-pF-D6Q" secondAttribute="bottom" constant="5" id="tA7-bG-nJQ"/>
+                            <constraint firstItem="TMU-2b-qxh" firstAttribute="centerX" secondItem="bly-TD-YUI" secondAttribute="centerX" id="wKA-zr-Fg4"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_items_add" translatesAutoresizingMaskIntoConstraints="NO" id="OBt-ZE-jjC">
+                        <rect key="frame" x="77" y="25" width="13" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="13" id="2xc-ag-Qpa"/>
+                            <constraint firstAttribute="height" constant="13" id="6mt-st-sCZ"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="v7T-K8-z4f" secondAttribute="trailing" constant="13" id="8RN-VI-Ylj"/>
+                <constraint firstItem="v7T-K8-z4f" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Mcg-QV-Umo"/>
+                <constraint firstAttribute="trailing" secondItem="OBt-ZE-jjC" secondAttribute="trailing" id="QNY-mI-xWY"/>
+                <constraint firstAttribute="bottom" secondItem="v7T-K8-z4f" secondAttribute="bottom" id="cO6-R6-0ZT"/>
+                <constraint firstItem="OBt-ZE-jjC" firstAttribute="baseline" secondItem="bly-TD-YUI" secondAttribute="baseline" id="h03-zf-kAe"/>
+                <constraint firstItem="v7T-K8-z4f" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="p0T-2d-sES"/>
+            </constraints>
+            <connections>
+                <outlet property="addImage" destination="OBt-ZE-jjC" id="jjm-Rm-JxW"/>
+                <outlet property="priceLabel" destination="TMU-2b-qxh" id="KMR-Ye-WLu"/>
+                <outlet property="serviceImage" destination="bly-TD-YUI" id="zgl-3F-Pis"/>
+                <outlet property="serviceLabel" destination="wYF-pF-D6Q" id="5rl-sS-64h"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="51.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_items_add" width="13" height="13"/>
+        <image name="icn_hair_cut" width="38" height="38"/>
+    </resources>
+</document>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="DeviceTextViewCell" rowHeight="120" id="Cpz-zb-ujU" customClass="DeviceTextViewCell" customModule="SalonWalker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cpz-zb-ujU" id="xYe-45-kgd">
+                <rect key="frame" x="0.0" y="0.0" width="330" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LTf-yh-ckr" customClass="IBInspectableView" customModule="SalonWalker" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="17" width="15" height="15"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="LTf-yh-ckr" secondAttribute="height" multiplier="1:1" id="SNL-1h-WH7"/>
+                            <constraint firstAttribute="width" constant="15" id="n1d-X2-Mlc"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_check" translatesAutoresizingMaskIntoConstraints="NO" id="0JT-UH-gsD">
+                        <rect key="frame" x="3" y="21.5" width="9" height="6"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="9" id="bs9-Bi-o4y"/>
+                            <constraint firstAttribute="height" constant="6" id="rpT-E9-Eft"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZU-jQ-aX5" customClass="IBInspectableLabel" customModule="SalonWalker" customModuleProvider="target">
+                        <rect key="frame" x="23" y="17" width="31" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dKO-el-rv6">
+                        <rect key="frame" x="24" y="40.5" width="286" height="73"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ahq-iG-brm" customClass="IBInspectableTextView" customModule="SalonWalker" customModuleProvider="target">
+                                <rect key="frame" x="10" y="5" width="266" height="63"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderLocalizedKey" value="Lang_RT_042"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="Cpz-zb-ujU" id="Rm0-hQ-ohr"/>
+                                </connections>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.96470588239999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ahq-iG-brm" firstAttribute="leading" secondItem="dKO-el-rv6" secondAttribute="leading" constant="10" id="3q3-E6-8WV"/>
+                            <constraint firstAttribute="bottom" secondItem="ahq-iG-brm" secondAttribute="bottom" constant="5" id="NZZ-sp-cHB"/>
+                            <constraint firstItem="ahq-iG-brm" firstAttribute="top" secondItem="dKO-el-rv6" secondAttribute="top" constant="5" id="Xkc-bU-H5I"/>
+                            <constraint firstAttribute="trailing" secondItem="ahq-iG-brm" secondAttribute="trailing" constant="10" id="zA2-yK-ORp"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UVc-jF-ica">
+                        <rect key="frame" x="0.0" y="118.5" width="330" height="1"/>
+                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="iXg-rt-rZk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0JT-UH-gsD" firstAttribute="centerY" secondItem="LTf-yh-ckr" secondAttribute="centerY" id="4Rq-Pj-ghV"/>
+                    <constraint firstAttribute="trailing" secondItem="UVc-jF-ica" secondAttribute="trailing" id="53K-hU-RbU"/>
+                    <constraint firstItem="UVc-jF-ica" firstAttribute="leading" secondItem="xYe-45-kgd" secondAttribute="leading" id="67e-CD-P86"/>
+                    <constraint firstItem="dKO-el-rv6" firstAttribute="leading" secondItem="xYe-45-kgd" secondAttribute="leading" constant="24" id="Bo1-5M-z8L"/>
+                    <constraint firstAttribute="bottom" secondItem="UVc-jF-ica" secondAttribute="bottom" id="DbM-pX-Mfy"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hZU-jQ-aX5" secondAttribute="trailing" constant="20" id="Dhq-A2-rmd"/>
+                    <constraint firstAttribute="trailing" secondItem="dKO-el-rv6" secondAttribute="trailing" constant="20" id="Edl-SJ-hLr"/>
+                    <constraint firstItem="LTf-yh-ckr" firstAttribute="leading" secondItem="xYe-45-kgd" secondAttribute="leading" id="FfH-RD-14H"/>
+                    <constraint firstItem="LTf-yh-ckr" firstAttribute="top" secondItem="xYe-45-kgd" secondAttribute="top" constant="17" id="GOT-NF-ZI1"/>
+                    <constraint firstItem="hZU-jQ-aX5" firstAttribute="top" secondItem="xYe-45-kgd" secondAttribute="top" constant="17" id="WIi-16-E2I"/>
+                    <constraint firstItem="hZU-jQ-aX5" firstAttribute="leading" secondItem="LTf-yh-ckr" secondAttribute="trailing" constant="8" id="kPa-4h-zCD"/>
+                    <constraint firstAttribute="bottom" secondItem="dKO-el-rv6" secondAttribute="bottom" constant="6" id="rdq-m6-E85"/>
+                    <constraint firstItem="dKO-el-rv6" firstAttribute="top" secondItem="hZU-jQ-aX5" secondAttribute="bottom" constant="9" id="tOb-6G-ZFg"/>
+                    <constraint firstItem="0JT-UH-gsD" firstAttribute="centerX" secondItem="LTf-yh-ckr" secondAttribute="centerX" id="vna-08-Xr4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="selectImageView" destination="0JT-UH-gsD" id="bkk-3H-QgD"/>
+                <outlet property="textView" destination="ahq-iG-brm" id="lps-0p-jCN"/>
+                <outlet property="titleLabel" destination="hZU-jQ-aX5" id="F3R-vg-JGz"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_check" width="11" height="8"/>
+    </resources>
+</document>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UploadPhotoCell" id="reh-2B-xhu" customClass="UploadPhotoCell" customModule="SalonWalker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="157" height="147"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="157" height="147"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EC1-e9-w2O">
+                        <rect key="frame" x="7" y="7" width="143" height="133"/>
+                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rft-QY-cuC">
+                        <rect key="frame" x="129.5" y="1" width="26.5" height="26.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="rft-QY-cuC" secondAttribute="height" multiplier="1:1" id="4pj-TN-lWs"/>
+                        </constraints>
+                        <state key="normal" image="btn_deleteimg"/>
+                        <connections>
+                            <action selector="deleteButtonPress:" destination="reh-2B-xhu" eventType="touchUpInside" id="6l1-mg-4pI"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfT-Ec-bDL">
+                        <rect key="frame" x="7" y="7" width="143" height="133"/>
+                        <state key="normal" backgroundImage="btn_addimg"/>
+                        <connections>
+                            <action selector="addButtonPress:" destination="reh-2B-xhu" eventType="touchUpInside" id="hDy-2z-gs1"/>
+                        </connections>
+                    </button>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="gMZ-fb-ZrX">
+                        <rect key="frame" x="69" y="63.5" width="20" height="20"/>
+                    </activityIndicatorView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="tfT-Ec-bDL" firstAttribute="top" secondItem="reh-2B-xhu" secondAttribute="top" constant="7" id="0N4-au-lK2"/>
+                <constraint firstItem="EC1-e9-w2O" firstAttribute="leading" secondItem="reh-2B-xhu" secondAttribute="leading" constant="7" id="F9r-22-0Id"/>
+                <constraint firstAttribute="trailing" secondItem="rft-QY-cuC" secondAttribute="trailing" constant="1" id="HdM-tW-9aY"/>
+                <constraint firstAttribute="trailing" secondItem="EC1-e9-w2O" secondAttribute="trailing" constant="7" id="SlF-h7-9s8"/>
+                <constraint firstItem="gMZ-fb-ZrX" firstAttribute="centerY" secondItem="reh-2B-xhu" secondAttribute="centerY" id="WlJ-QX-icX"/>
+                <constraint firstAttribute="bottom" secondItem="tfT-Ec-bDL" secondAttribute="bottom" constant="7" id="XS9-vZ-fkx"/>
+                <constraint firstItem="rft-QY-cuC" firstAttribute="width" secondItem="reh-2B-xhu" secondAttribute="width" multiplier="0.17" id="aCr-7X-76w"/>
+                <constraint firstItem="gMZ-fb-ZrX" firstAttribute="centerX" secondItem="reh-2B-xhu" secondAttribute="centerX" id="bg0-Nz-Z4U"/>
+                <constraint firstAttribute="trailing" secondItem="tfT-Ec-bDL" secondAttribute="trailing" constant="7" id="eaW-bK-PQp"/>
+                <constraint firstItem="tfT-Ec-bDL" firstAttribute="leading" secondItem="reh-2B-xhu" secondAttribute="leading" constant="7" id="gw9-Kf-USb"/>
+                <constraint firstItem="rft-QY-cuC" firstAttribute="top" secondItem="reh-2B-xhu" secondAttribute="top" constant="1" id="lbR-sE-OB0"/>
+                <constraint firstAttribute="bottom" secondItem="EC1-e9-w2O" secondAttribute="bottom" constant="7" id="qgi-29-X5Z"/>
+                <constraint firstItem="EC1-e9-w2O" firstAttribute="top" secondItem="reh-2B-xhu" secondAttribute="top" constant="7" id="zHX-2K-8xc"/>
+            </constraints>
+            <connections>
+                <outlet property="addButton" destination="tfT-Ec-bDL" id="Wuj-V2-63K"/>
+                <outlet property="deleteButton" destination="rft-QY-cuC" id="SFN-af-Z4c"/>
+                <outlet property="imageView" destination="EC1-e9-w2O" id="Awb-TZ-WLQ"/>
+                <outlet property="indicatorView" destination="gMZ-fb-ZrX" id="ZtB-PX-tbl"/>
+            </connections>
+            <point key="canvasLocation" x="-196.5" y="51.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="btn_addimg" width="132" height="132"/>
+        <image name="btn_deleteimg" width="23" height="23"/>
+    </resources>
+</document>

@@ -1,0 +1,16 @@
+/* 
+  InfoPlist.strings
+  SalonWalker
+
+  Created by Daniel on 2019/1/21.
+  Copyright © 2019年 skywind. All rights reserved.
+*/
+
+"NSCameraUsageDescription" = "拍照或录影需要使用您的相机功能，请允许App存取您的相机";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "您的位置资讯将使用在查看设计师列表，用于显示您与该设计师的距离，及服务当天使用打卡功能；请允许App存取您的位置资讯，获得更好的服务体验";
+"NSLocationAlwaysUsageDescription" = "您的位置资讯将使用在查看设计师列表，用于显示您与该设计师的距离，及服务当天使用打卡功能；请允许App存取您的位置资讯，获得更好的服务体验";
+"NSLocationUsageDescription" = "您的位置资讯将使用在查看设计师列表，用于显示您与该设计师的距离，及服务当天使用打卡功能；请允许App存取您的位置资讯，获得更好的服务体验";
+"NSLocationWhenInUseUsageDescription" = "您的位置资讯将使用在查看设计师列表，用于显示您与该设计师的距离，及服务当天使用打卡功能；请允许App存取您的位置资讯，获得更好的服务体验";
+"NSMicrophoneUsageDescription" = "录影需要使用您的麦克风功能，请允许App存取您的麦克风";
+"NSPhotoLibraryAddUsageDescription" = "上传照片或影片需要使用您的相簿功能，请允许App存取您的相簿";
+"NSPhotoLibraryUsageDescription" = "上传照片或影片需要使用您的相簿功能，请允许App存取您的相簿";

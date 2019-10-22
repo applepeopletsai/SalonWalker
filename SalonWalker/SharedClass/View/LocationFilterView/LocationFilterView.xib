@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="I1A-hk-IXA" customClass="LocationFilterView" customModule="SalonWalker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="458" height="490"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8mq-Xg-1AT">
+                    <rect key="frame" x="0.0" y="30" width="458" height="200"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QzR-FF-EL6">
+                            <rect key="frame" x="0.0" y="0.0" width="458" height="200"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="delegate" destination="I1A-hk-IXA" id="2rN-EV-7ju"/>
+                            </connections>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="QzR-FF-EL6" firstAttribute="top" secondItem="8mq-Xg-1AT" secondAttribute="top" id="3kb-1h-hWf"/>
+                        <constraint firstAttribute="height" constant="200" id="7q5-Gn-V4n"/>
+                        <constraint firstAttribute="bottom" secondItem="QzR-FF-EL6" secondAttribute="bottom" id="LIr-sX-PcL"/>
+                        <constraint firstItem="QzR-FF-EL6" firstAttribute="leading" secondItem="8mq-Xg-1AT" secondAttribute="leading" id="WbP-Bm-FAy"/>
+                        <constraint firstAttribute="trailing" secondItem="QzR-FF-EL6" secondAttribute="trailing" id="ijq-mC-4Vj"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m9d-c2-iey">
+                    <rect key="frame" x="0.0" y="0.0" width="458" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="j1b-hQ-Jyb" customClass="IBInspectableSegmentedControl" customModule="SalonWalker" customModuleProvider="target">
+                    <rect key="frame" x="15" y="0.0" width="428" height="31"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="zJh-yc-z4P"/>
+                    </constraints>
+                    <segments>
+                        <segment title="縣市"/>
+                        <segment title="行政區"/>
+                        <segment title="近期搜尋"/>
+                    </segments>
+                    <color key="tintColor" red="0.1019607843" green="0.10980392160000001" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="titles" value="Lang_HM_021,Lang_HM_023,Lang_HM_024"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.1019607843" green="0.10980392160000001" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="segmentValueChange:" destination="I1A-hk-IXA" eventType="valueChanged" id="lSg-Ib-j9l"/>
+                    </connections>
+                </segmentedControl>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBM-iq-twK">
+                    <rect key="frame" x="0.0" y="230" width="458" height="40"/>
+                    <color key="backgroundColor" red="0.1019607843" green="0.10980392160000001" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="AgA-6V-tj9"/>
+                    </constraints>
+                    <state key="normal" title="完成">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="finishButtonPress:" destination="I1A-hk-IXA" eventType="touchUpInside" id="6jW-OD-r4l"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cd-Ig-Uxz">
+                    <rect key="frame" x="0.0" y="270" width="458" height="220"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="blackAreaButtonPress:" destination="I1A-hk-IXA" eventType="touchUpInside" id="YP5-8Z-hJr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="j1b-hQ-Jyb" firstAttribute="leading" secondItem="I1A-hk-IXA" secondAttribute="leading" constant="15" id="5Mn-SV-af4"/>
+                <constraint firstItem="m9d-c2-iey" firstAttribute="leading" secondItem="I1A-hk-IXA" secondAttribute="leading" id="5V9-1J-h8b"/>
+                <constraint firstItem="8mq-Xg-1AT" firstAttribute="top" secondItem="j1b-hQ-Jyb" secondAttribute="bottom" id="Ge6-Px-N2h"/>
+                <constraint firstItem="7cd-Ig-Uxz" firstAttribute="top" secondItem="BBM-iq-twK" secondAttribute="bottom" id="NwP-h9-TUe"/>
+                <constraint firstAttribute="trailing" secondItem="BBM-iq-twK" secondAttribute="trailing" id="bqI-Ep-Ebq"/>
+                <constraint firstItem="7cd-Ig-Uxz" firstAttribute="leading" secondItem="I1A-hk-IXA" secondAttribute="leading" id="cTx-wi-iKi"/>
+                <constraint firstItem="j1b-hQ-Jyb" firstAttribute="top" secondItem="I1A-hk-IXA" secondAttribute="top" priority="900" id="d8R-Vy-8pf"/>
+                <constraint firstAttribute="trailing" secondItem="7cd-Ig-Uxz" secondAttribute="trailing" id="g6h-FF-tLp"/>
+                <constraint firstAttribute="trailing" secondItem="8mq-Xg-1AT" secondAttribute="trailing" id="gbt-II-6sJ"/>
+                <constraint firstAttribute="bottom" secondItem="7cd-Ig-Uxz" secondAttribute="bottom" id="hpn-yd-Qeu"/>
+                <constraint firstAttribute="trailing" secondItem="m9d-c2-iey" secondAttribute="trailing" id="k9o-yn-dOM"/>
+                <constraint firstItem="8mq-Xg-1AT" firstAttribute="leading" secondItem="I1A-hk-IXA" secondAttribute="leading" id="rJm-09-hOM"/>
+                <constraint firstItem="m9d-c2-iey" firstAttribute="top" secondItem="I1A-hk-IXA" secondAttribute="top" id="spe-IU-I9V"/>
+                <constraint firstItem="m9d-c2-iey" firstAttribute="bottom" secondItem="j1b-hQ-Jyb" secondAttribute="bottom" id="uYG-he-fFP"/>
+                <constraint firstItem="BBM-iq-twK" firstAttribute="top" secondItem="8mq-Xg-1AT" secondAttribute="bottom" id="v4Z-78-eeR"/>
+                <constraint firstItem="BBM-iq-twK" firstAttribute="leading" secondItem="I1A-hk-IXA" secondAttribute="leading" id="wkC-NM-SQB"/>
+                <constraint firstAttribute="trailing" secondItem="j1b-hQ-Jyb" secondAttribute="trailing" constant="15" id="wwZ-cd-xBH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="scrollView" destination="QzR-FF-EL6" id="wEp-3Y-Qab"/>
+                <outlet property="scrollViewHeight" destination="7q5-Gn-V4n" id="53R-92-oEH"/>
+                <outlet property="segment" destination="j1b-hQ-Jyb" id="BD1-bU-2mh"/>
+                <outlet property="segmentTopConstraint" destination="d8R-Vy-8pf" id="ezf-CP-iwe"/>
+            </connections>
+            <point key="canvasLocation" x="-304" y="-298"/>
+        </view>
+    </objects>
+</document>

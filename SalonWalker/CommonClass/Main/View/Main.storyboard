@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Q1i-ok-P5F">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="rl8-3a-dEb">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Yb3-LF-OtK" customClass="ViewController" customModule="SalonMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CHc-FP-0r6"/>
+                        <viewControllerLayoutGuide type="bottom" id="98p-9v-gWa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zwF-TK-L8x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfA-ag-LvN">
+                                <rect key="frame" x="157.5" y="290" width="60" height="30"/>
+                                <state key="normal" title="FB Login"/>
+                                <connections>
+                                    <action selector="fbLoginButtonPress:" destination="Yb3-LF-OtK" eventType="touchUpInside" id="4gk-hb-ABq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJE-UZ-bGy">
+                                <rect key="frame" x="134" y="90" width="107" height="30"/>
+                                <state key="normal" title="TwoButtonAlert"/>
+                                <connections>
+                                    <action selector="twoButtonPress:" destination="Yb3-LF-OtK" eventType="touchUpInside" id="6fD-RH-o0t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJf-XJ-1bm">
+                                <rect key="frame" x="138" y="240" width="99" height="30"/>
+                                <state key="normal" title="NoButtonAlert"/>
+                                <connections>
+                                    <action selector="noButtonPress:" destination="Yb3-LF-OtK" eventType="touchUpInside" id="dMI-RU-fSe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Go0-hZ-Z7h">
+                                <rect key="frame" x="142" y="340" width="91" height="30"/>
+                                <state key="normal" title="Google Login"/>
+                                <connections>
+                                    <action selector="googlLoginButtonPress:" destination="Yb3-LF-OtK" eventType="touchUpInside" id="07a-Qg-dwt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXL-Q3-coL">
+                                <rect key="frame" x="167" y="390" width="41" height="30"/>
+                                <state key="normal" title="Photo"/>
+                                <connections>
+                                    <action selector="photoButtonPress:" destination="Yb3-LF-OtK" eventType="touchUpInside" id="qXX-y0-YVr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gz-49-bUK">
+                                <rect key="frame" x="140" y="440" width="95" height="30"/>
+                                <state key="normal" title="MultiplePhoto"/>
+                                <connections>
+                                    <action selector="multiplePhotoButtonPress:" destination="Yb3-LF-OtK" eventType="touchUpInside" id="lFw-JY-iMO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uST-g8-8WW">
+                                <rect key="frame" x="134" y="40" width="107" height="30"/>
+                                <state key="normal" title="OneButtonAlert"/>
+                                <connections>
+                                    <action selector="oneButtonPress:" destination="Yb3-LF-OtK" eventType="touchUpInside" id="h2o-ZI-IvQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJQ-Dj-VjM">
+                                <rect key="frame" x="156.5" y="190" width="62" height="30"/>
+                                <state key="normal" title="Calendar"/>
+                                <connections>
+                                    <action selector="calendarButtonPress:" destination="Yb3-LF-OtK" eventType="touchUpInside" id="jub-eY-x9T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCk-Tl-8q5">
+                                <rect key="frame" x="149" y="140" width="77" height="30"/>
+                                <state key="normal" title="TimePicker"/>
+                                <connections>
+                                    <action selector="timePickerButtonPress:" destination="Yb3-LF-OtK" eventType="touchUpInside" id="z0z-qZ-img"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uST-g8-8WW" firstAttribute="centerX" secondItem="zwF-TK-L8x" secondAttribute="centerX" id="3Lo-hu-aHd"/>
+                            <constraint firstItem="hXL-Q3-coL" firstAttribute="top" secondItem="Go0-hZ-Z7h" secondAttribute="bottom" constant="20" id="5MU-wZ-TqX"/>
+                            <constraint firstItem="QJQ-Dj-VjM" firstAttribute="centerX" secondItem="zwF-TK-L8x" secondAttribute="centerX" id="7LA-aR-sWB"/>
+                            <constraint firstItem="ZJE-UZ-bGy" firstAttribute="top" secondItem="uST-g8-8WW" secondAttribute="bottom" constant="20" id="A2b-sm-Wd0"/>
+                            <constraint firstItem="dfA-ag-LvN" firstAttribute="top" secondItem="KJf-XJ-1bm" secondAttribute="bottom" constant="20" id="JgF-9D-Ofl"/>
+                            <constraint firstItem="hXL-Q3-coL" firstAttribute="centerX" secondItem="zwF-TK-L8x" secondAttribute="centerX" id="LpL-AG-R6U"/>
+                            <constraint firstItem="uST-g8-8WW" firstAttribute="top" secondItem="CHc-FP-0r6" secondAttribute="bottom" constant="20" id="OCn-hp-vpu"/>
+                            <constraint firstItem="Go0-hZ-Z7h" firstAttribute="centerX" secondItem="zwF-TK-L8x" secondAttribute="centerX" id="PKW-3X-Hcq"/>
+                            <constraint firstItem="KJf-XJ-1bm" firstAttribute="top" secondItem="QJQ-Dj-VjM" secondAttribute="bottom" constant="20" id="PdK-5E-Ewn"/>
+                            <constraint firstItem="ZJE-UZ-bGy" firstAttribute="centerX" secondItem="zwF-TK-L8x" secondAttribute="centerX" id="RML-Vo-3B8"/>
+                            <constraint firstItem="QJQ-Dj-VjM" firstAttribute="top" secondItem="yCk-Tl-8q5" secondAttribute="bottom" constant="20" id="axp-3T-l85"/>
+                            <constraint firstItem="1gz-49-bUK" firstAttribute="centerX" secondItem="zwF-TK-L8x" secondAttribute="centerX" id="dp4-E3-RQ0"/>
+                            <constraint firstItem="yCk-Tl-8q5" firstAttribute="centerX" secondItem="zwF-TK-L8x" secondAttribute="centerX" id="iCn-8r-Nu2"/>
+                            <constraint firstItem="1gz-49-bUK" firstAttribute="top" secondItem="hXL-Q3-coL" secondAttribute="bottom" constant="20" id="nHL-mq-hsM"/>
+                            <constraint firstItem="yCk-Tl-8q5" firstAttribute="top" secondItem="ZJE-UZ-bGy" secondAttribute="bottom" constant="20" id="see-kz-kN0"/>
+                            <constraint firstItem="Go0-hZ-Z7h" firstAttribute="top" secondItem="dfA-ag-LvN" secondAttribute="bottom" constant="20" id="srh-Hk-fbJ"/>
+                            <constraint firstItem="KJf-XJ-1bm" firstAttribute="centerX" secondItem="zwF-TK-L8x" secondAttribute="centerX" id="uW4-fl-EE2"/>
+                            <constraint firstItem="dfA-ag-LvN" firstAttribute="centerX" secondItem="zwF-TK-L8x" secondAttribute="centerX" id="wwK-Xa-FrW"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ijX-sM-8fd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-281" y="194"/>
+        </scene>
+        <!--Main Tab Bar Controller-->
+        <scene sceneID="lDO-aX-Ho5">
+            <objects>
+                <tabBarController storyboardIdentifier="MainTabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Q1i-ok-P5F" customClass="MainTabBarController" customModule="SalonMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kbN-Ok-glT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oPS-JS-0pV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-190" y="920"/>
+        </scene>
+    </scenes>
+</document>

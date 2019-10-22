@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="aEG-Uy-c5o" customClass="MainTabBarItem" customModule="SalonWalker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabbar_main_normal" translatesAutoresizingMaskIntoConstraints="NO" id="8gK-gz-1FG">
+                    <rect key="frame" x="21" y="23" width="28" height="28"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0y-iK-o1n">
+                    <rect key="frame" x="37" y="15" width="20" height="20"/>
+                    <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="GFk-7o-OEN"/>
+                        <constraint firstAttribute="width" constant="20" id="xwd-2i-Stl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCu-Av-ORm">
+                    <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                    <connections>
+                        <action selector="buttonPress:" destination="aEG-Uy-c5o" eventType="touchUpInside" id="z7T-fM-3bd"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fCu-Av-ORm" firstAttribute="leading" secondItem="aEG-Uy-c5o" secondAttribute="leading" id="75u-oh-Am7"/>
+                <constraint firstAttribute="trailing" secondItem="fCu-Av-ORm" secondAttribute="trailing" id="K6p-Cl-0PV"/>
+                <constraint firstItem="8gK-gz-1FG" firstAttribute="centerY" secondItem="aEG-Uy-c5o" secondAttribute="centerY" multiplier="1.05" id="PHC-wf-k79"/>
+                <constraint firstAttribute="bottom" secondItem="fCu-Av-ORm" secondAttribute="bottom" id="Uft-hT-w4c"/>
+                <constraint firstItem="i0y-iK-o1n" firstAttribute="trailing" secondItem="8gK-gz-1FG" secondAttribute="trailing" constant="8" id="W77-pl-4pG"/>
+                <constraint firstItem="fCu-Av-ORm" firstAttribute="top" secondItem="aEG-Uy-c5o" secondAttribute="top" id="l4q-g0-xMO"/>
+                <constraint firstItem="8gK-gz-1FG" firstAttribute="centerX" secondItem="aEG-Uy-c5o" secondAttribute="centerX" id="qRp-SY-Cj5"/>
+                <constraint firstItem="i0y-iK-o1n" firstAttribute="top" secondItem="8gK-gz-1FG" secondAttribute="top" constant="-8" id="rU1-EK-7RR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="badgeLabel" destination="i0y-iK-o1n" id="m5e-C0-edV"/>
+                <outlet property="imageView" destination="8gK-gz-1FG" id="WMU-bj-8mB"/>
+            </connections>
+            <point key="canvasLocation" x="-126" y="-101"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tabbar_main_normal" width="28" height="28"/>
+    </resources>
+</document>

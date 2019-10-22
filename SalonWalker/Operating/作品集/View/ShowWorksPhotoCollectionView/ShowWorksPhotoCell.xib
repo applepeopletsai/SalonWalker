@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ShowWorksPhotoCell" id="gTV-IL-0wX" customClass="ShowWorksPhotoCell" customModule="SalonWalker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="165"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="130" height="165"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_album" translatesAutoresizingMaskIntoConstraints="NO" id="gYU-FC-6xK">
+                        <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="gYU-FC-6xK" secondAttribute="height" id="CHD-gb-oox"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bR9-hl-xnf">
+                        <rect key="frame" x="2" y="10" width="118" height="118"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFI-6G-OJk">
+                        <rect key="frame" x="12" y="137" width="106" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGf-65-kyY">
+                        <rect key="frame" x="90" y="97" width="30" height="26"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    </button>
+                    <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpX-cq-bzX">
+                        <rect key="frame" x="105" y="5" width="20" height="22"/>
+                        <state key="normal" image="checkbox_normal_20x20"/>
+                        <state key="selected" image="checkbox_checked_20x20"/>
+                    </button>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Fu-kl-3oj">
+                        <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="2Fu-kl-3oj" secondAttribute="height" id="QGg-Fp-x3S"/>
+                        </constraints>
+                        <state key="normal" image="btn_addimg"/>
+                        <connections>
+                            <action selector="addButtonPress:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Sc6-2O-iwM"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TFI-6G-OJk" secondAttribute="trailing" constant="12" id="7wy-Dc-K5P"/>
+                <constraint firstAttribute="trailing" secondItem="NGf-65-kyY" secondAttribute="trailing" constant="10" id="AHh-c1-eag"/>
+                <constraint firstItem="bR9-hl-xnf" firstAttribute="bottom" secondItem="gYU-FC-6xK" secondAttribute="bottom" constant="-2" id="Hj2-wa-TeQ"/>
+                <constraint firstItem="TFI-6G-OJk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="Iyb-qI-aPX"/>
+                <constraint firstItem="dpX-cq-bzX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="RDM-fM-Rb8"/>
+                <constraint firstItem="NGf-65-kyY" firstAttribute="bottom" secondItem="bR9-hl-xnf" secondAttribute="bottom" constant="-5" id="Rej-GW-EEe"/>
+                <constraint firstItem="2Fu-kl-3oj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="TwY-og-aME"/>
+                <constraint firstItem="gYU-FC-6xK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bR1-rX-LkE"/>
+                <constraint firstAttribute="trailing" secondItem="2Fu-kl-3oj" secondAttribute="trailing" id="cdt-px-gj9"/>
+                <constraint firstAttribute="trailing" secondItem="gYU-FC-6xK" secondAttribute="trailing" id="fge-0w-bdn"/>
+                <constraint firstItem="2Fu-kl-3oj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mOf-rh-F0p"/>
+                <constraint firstItem="bR9-hl-xnf" firstAttribute="trailing" secondItem="gYU-FC-6xK" secondAttribute="trailing" constant="-10" id="mRT-1e-old"/>
+                <constraint firstAttribute="trailing" secondItem="dpX-cq-bzX" secondAttribute="trailing" constant="5" id="q2R-VZ-vcL"/>
+                <constraint firstItem="bR9-hl-xnf" firstAttribute="top" secondItem="gYU-FC-6xK" secondAttribute="top" constant="10" id="qBY-OU-QlV"/>
+                <constraint firstItem="TFI-6G-OJk" firstAttribute="top" secondItem="gYU-FC-6xK" secondAttribute="bottom" constant="7" id="qpT-ES-yrD"/>
+                <constraint firstItem="bR9-hl-xnf" firstAttribute="leading" secondItem="gYU-FC-6xK" secondAttribute="leading" constant="2" id="rPg-er-qE6"/>
+                <constraint firstItem="gYU-FC-6xK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vZw-G1-WqJ"/>
+            </constraints>
+            <size key="customSize" width="130" height="165"/>
+            <connections>
+                <outlet property="addButton" destination="2Fu-kl-3oj" id="fHQ-Qg-Eoo"/>
+                <outlet property="bottomImageView" destination="gYU-FC-6xK" id="JDV-qE-Frj"/>
+                <outlet property="checkedButton" destination="dpX-cq-bzX" id="PJE-bC-b7h"/>
+                <outlet property="descriptionLabel" destination="TFI-6G-OJk" id="09g-yo-Jbs"/>
+                <outlet property="markButton" destination="NGf-65-kyY" id="Y4m-0j-f0k"/>
+                <outlet property="topImageView" destination="bR9-hl-xnf" id="Hw0-3F-dk0"/>
+                <outlet property="topImageViewBottomConstraint" destination="Hj2-wa-TeQ" id="JKw-qQ-Yz2"/>
+                <outlet property="topImageViewLeftConstraint" destination="rPg-er-qE6" id="Wvt-Kt-ywI"/>
+                <outlet property="topImageViewRightConstraint" destination="mRT-1e-old" id="8aO-Jy-DpY"/>
+                <outlet property="topImageViewTopConstraint" destination="qBY-OU-QlV" id="cLE-lf-s8i"/>
+            </connections>
+            <point key="canvasLocation" x="-183" y="-53.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="btn_addimg" width="132" height="132"/>
+        <image name="checkbox_checked_20x20" width="20" height="20"/>
+        <image name="checkbox_normal_20x20" width="20" height="21"/>
+        <image name="img_album" width="125" height="125"/>
+    </resources>
+</document>

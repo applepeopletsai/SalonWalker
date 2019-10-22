@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OneButtonAlertView" customModule="SalonWalker" customModuleProvider="target">
+            <connections>
+                <outlet property="actionButton" destination="R5b-hP-Kee" id="qM6-u3-Gns"/>
+                <outlet property="imageView" destination="BSO-Bi-biq" id="xxc-s6-JTk"/>
+                <outlet property="messageLabel" destination="kko-ha-dKP" id="Oq8-rk-edi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="hHc-sC-Awg">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BSO-Bi-biq">
+                    <rect key="frame" x="175" y="20" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="R0S-vi-p2h"/>
+                        <constraint firstAttribute="height" constant="50" id="TyH-5m-Zkd"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kko-ha-dKP">
+                    <rect key="frame" x="10" y="80" width="380" height="118"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JoW-lP-bbk">
+                    <rect key="frame" x="0.0" y="198" width="400" height="2"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="hSH-GY-f7d"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5b-hP-Kee">
+                    <rect key="frame" x="0.0" y="200" width="400" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="GnF-Sf-XSS"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="buttonPress:" destination="-1" eventType="touchUpInside" id="3XA-I4-1Wu"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="R5b-hP-Kee" firstAttribute="top" secondItem="JoW-lP-bbk" secondAttribute="bottom" id="Fiz-o6-pON"/>
+                <constraint firstItem="JoW-lP-bbk" firstAttribute="leading" secondItem="hHc-sC-Awg" secondAttribute="leading" id="PQQ-qv-wIT"/>
+                <constraint firstItem="JoW-lP-bbk" firstAttribute="top" secondItem="kko-ha-dKP" secondAttribute="bottom" id="TCW-Ik-axe"/>
+                <constraint firstItem="kko-ha-dKP" firstAttribute="leading" secondItem="hHc-sC-Awg" secondAttribute="leading" constant="10" id="TaS-uK-l0e"/>
+                <constraint firstItem="kko-ha-dKP" firstAttribute="top" secondItem="BSO-Bi-biq" secondAttribute="bottom" constant="10" id="VJL-dc-uCn"/>
+                <constraint firstAttribute="trailing" secondItem="kko-ha-dKP" secondAttribute="trailing" constant="10" id="VPh-Ht-ee9"/>
+                <constraint firstAttribute="trailing" secondItem="JoW-lP-bbk" secondAttribute="trailing" id="bcF-15-0eP"/>
+                <constraint firstItem="R5b-hP-Kee" firstAttribute="bottom" secondItem="hHc-sC-Awg" secondAttribute="bottom" id="dNV-Zp-xeu"/>
+                <constraint firstItem="BSO-Bi-biq" firstAttribute="top" secondItem="hHc-sC-Awg" secondAttribute="top" constant="20" id="eYE-7C-6Ke"/>
+                <constraint firstItem="BSO-Bi-biq" firstAttribute="centerX" secondItem="hHc-sC-Awg" secondAttribute="centerX" id="lyb-dG-ysr"/>
+                <constraint firstItem="R5b-hP-Kee" firstAttribute="trailing" secondItem="hHc-sC-Awg" secondAttribute="trailing" id="wXS-IV-eBq"/>
+                <constraint firstItem="R5b-hP-Kee" firstAttribute="leading" secondItem="hHc-sC-Awg" secondAttribute="leading" id="yBj-uO-rz5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="0.0" y="-157"/>
+        </view>
+    </objects>
+</document>

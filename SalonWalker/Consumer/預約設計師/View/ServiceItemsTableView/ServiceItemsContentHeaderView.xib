@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="v8u-6i-vnD" customClass="ServiceItemsContentHeaderView" customModule="SalonWalker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jxL-La-Zyh">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Wa-sh-mDq" customClass="ServiceItemCollectionView" customModule="SalonWalker" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" priority="900" constant="125" id="62a-eP-KYY"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ne-HR-6hb">
+                            <rect key="frame" x="0.0" y="125" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" priority="900" constant="1" id="iVb-pR-7AR"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Gn-ho-tcO">
+                            <rect key="frame" x="279.5" y="136.5" width="75.5" height="38.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="總價" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdZ-ks-Tld" customClass="IBInspectableLabel" customModule="SalonWalker" customModuleProvider="target">
+                            <rect key="frame" x="244.5" y="155" width="25" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.1019607843" green="0.10980392160000001" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="titleLocalizedKey" value="Lang_RV_001"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="0Wa-sh-mDq" firstAttribute="top" secondItem="jxL-La-Zyh" secondAttribute="top" id="0Ib-d7-M6B"/>
+                        <constraint firstAttribute="trailing" secondItem="0Wa-sh-mDq" secondAttribute="trailing" id="9aH-Hg-sVS"/>
+                        <constraint firstAttribute="trailing" secondItem="8Gn-ho-tcO" secondAttribute="trailing" constant="20" id="EIz-5Q-cPM"/>
+                        <constraint firstAttribute="bottom" secondItem="8Gn-ho-tcO" secondAttribute="bottom" constant="5" id="HTJ-YE-aQU"/>
+                        <constraint firstAttribute="trailing" secondItem="8ne-HR-6hb" secondAttribute="trailing" id="X6f-vG-jah"/>
+                        <constraint firstItem="8ne-HR-6hb" firstAttribute="leading" secondItem="jxL-La-Zyh" secondAttribute="leading" id="fe4-8d-j3S"/>
+                        <constraint firstItem="8Gn-ho-tcO" firstAttribute="leading" secondItem="cdZ-ks-Tld" secondAttribute="trailing" constant="10" id="giQ-u3-7eI"/>
+                        <constraint firstItem="0Wa-sh-mDq" firstAttribute="leading" secondItem="jxL-La-Zyh" secondAttribute="leading" id="kbf-Yw-Jt5"/>
+                        <constraint firstAttribute="bottom" secondItem="cdZ-ks-Tld" secondAttribute="bottom" constant="10" id="tIl-IK-l1C"/>
+                        <constraint firstItem="8ne-HR-6hb" firstAttribute="top" secondItem="0Wa-sh-mDq" secondAttribute="bottom" id="zP3-VH-clh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="jxL-La-Zyh" firstAttribute="leading" secondItem="v8u-6i-vnD" secondAttribute="leading" id="BU8-X2-I88"/>
+                <constraint firstItem="jxL-La-Zyh" firstAttribute="top" secondItem="v8u-6i-vnD" secondAttribute="top" id="DXt-XA-4No"/>
+                <constraint firstAttribute="trailing" secondItem="jxL-La-Zyh" secondAttribute="trailing" id="Kbg-Jl-qEt"/>
+                <constraint firstAttribute="bottom" secondItem="jxL-La-Zyh" secondAttribute="bottom" id="ggX-q4-zbj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="serviceItemCollectionView" destination="0Wa-sh-mDq" id="CVL-T1-gMv"/>
+                <outlet property="totalPriceLabel" destination="8Gn-ho-tcO" id="NVu-4a-e5l"/>
+            </connections>
+            <point key="canvasLocation" x="72.5" y="-98"/>
+        </view>
+    </objects>
+</document>
